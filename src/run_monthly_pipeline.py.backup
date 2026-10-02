@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import argparse
+import subprocess
+import pandas as pd
+
+
+INVENTORY = "data/smap_granule_inventory.csv"
+MONTHLY_DIR = "data/monthly"
+
+EXTRACTOR = "src/extract_monthly_production.py"
+VALIDATOR = "src/check_monthly_production.py"
+
+
+def get_months():
+
+    df = pd.read_csv(INVENTORY)
+
+    df["time_start"] = pd.to_datetime(
+        df["time_start"],
+        utc=True
+    )
+
+    months = (
+        df["time_start"]
+        .dt.strftime("%Y-%m")
+        .drop_duplicates()
+        .sort_values()
+        .tolist()
+    )
+
+    # March 2015 is a partial month in our inventory.
+    months = [
+        m for m in months
+        if m >= "2015-04"
+    ]
+
+    return months
+
+
+def output_exists(month):
+
+    return os.path.exists(
+        os.path.join(
+            MONTHLY_DIR,
+            f"{month}.csv"
+        )
+    )
+
+
+def validate(month):
+
+    print()
+    print("-" * 70)
+    print(f"VALIDATING {month}")
+    print("-" * 70)
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            VALIDATOR,
+            month
+        ]
+    )
+
+    return result.returncode == 0
+
+
+def extract(month):
+
+    print()
+    print("=" * 70)
+    print(f"EXTRACTING {month}")
+    print("=" * 70)
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            EXTRACTOR,
+            month
+        ]
+    )
+
+    return result.returncode == 0
+
+
+def main():
+
+    parser = argparse.ArgumentParser(
+        description="Run EarthTrend Detective monthly pipeline."
+    )
+
+    parser.add_argument(
+        "--start",
+        help="Start month YYYY-MM"
+    )
+
+    parser.add_argument(
+        "--end",
+        help="End month YYYY-MM"
+    )
+
+    args = parser.parse_args()
+
+    os.makedirs(MONTHLY_DIR, exist_ok=True)
+
+    months = get_months()
+
+    if args.start:
+        months = [
+            m for m in months
+            if m >= args.start
+        ]
+
+    if args.end:
+        months = [
+            m for m in months
+            if m <= args.end
+        ]
+
+    if not months:
+        print("No months selected.")
+        return 1
+
+    print("=" * 70)
+    print("EarthTrend Detective — Monthly Pipeline Controller")
+    print("=" * 70)
+
+    print(f"Months available: {len(months)}")
+    print(f"First month:      {months[0]}")
+    print(f"Last month:       {months[-1]}")
+
+    print()
+    print("Pipeline rule:")
+    print("  Existing CSV → validate → skip extraction")
+    print("  Missing CSV  → extract → validate")
+    print()
+
+    completed = []
+    skipped = []
+    failed = []
+
+    for month in months:
+
+        print()
+        print("#" * 70)
+        print(f"MONTH: {month}")
+        print("#" * 70)
+
+        if output_exists(month):
+
+            print(
+                f"{month}: output already exists."
+            )
+
+            if validate(month):
+
+                print(
+                    f"{month}: VALIDATED — SKIPPING extraction."
+                )
+
+                skipped.append(month)
+
+            else:
+
+                print(
+                    f"{month}: EXISTING OUTPUT FAILED VALIDATION."
+                )
+
+                print(
+                    "Pipeline stopped for safety."
+                )
+
+                failed.append(month)
+                break
+
+        else:
+
+            if not extract(month):
+
+                print(
+                    f"{month}: EXTRACTION FAILED."
+                )
+
+                failed.append(month)
+                break
+
+            if not validate(month):
+
+                print(
+                    f"{month}: VALIDATION FAILED."
+                )
+
+                failed.append(month)
+                break
+
+            print(
+                f"{month}: COMPLETE + VALIDATED."
+            )
+
+            completed.append(month)
+
+    print()
+    print("=" * 70)
+    print("PIPELINE SUMMARY")
+    print("=" * 70)
+
+    print(
+        f"Newly completed: {len(completed)}"
+    )
+
+    print(
+        f"Already validated/skipped: {len(skipped)}"
+    )
+
+    print(
+        f"Failed: {len(failed)}"
+    )
+
+    if completed:
+        print("\nCompleted months:")
+
+        for month in completed:
+            print(f"  PASS  {month}")
+
+    if skipped:
+        print("\nSkipped months:")
+
+        for month in skipped:
+            print(f"  SKIP  {month}")
+
+    if failed:
+        print("\nFailed months:")
+
+        for month in failed:
+            print(f"  FAIL  {month}")
+
+        print("\nSTATUS: FAILED")
+        return 1
+
+    print("\nSTATUS: PASS")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

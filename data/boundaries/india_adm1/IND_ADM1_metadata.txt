@@ -1,0 +1,2 @@
+Processed File Name,Group,Year,Boundary Level,Source 1,Source 2,License,Link to Source Data,Changes,Known Errors,Raw File Name,Unnamed: 11,Unnamed: 12,country_code,boundary_level
+IND_ADM1.zip,India,2017,ADM 1,OpenStreetMap,Wambacher (https://wambachers-osm.website/boundaries/),ODbL,,No,,exported_boundaries_Andaman_and_Nicobar_Islands.shp.zip,,,IND,ADM1

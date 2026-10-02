@@ -1,0 +1,8 @@
+xarray
+netCDF4
+h5py
+requests
+matplotlib
+geopandas
+shapely
+rasterio

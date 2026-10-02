@@ -1,0 +1,2 @@
+month,index,title,time_start,opendap_url,error
+2015-05,205,SMAP_L4_SM_gph_20150526T163000_Vv8010_001.h5,2015-05-26 15:00:00+00:00,https://opendap.earthdata.nasa.gov/collections/C3480440870-NSIDC_CPRD/granules/SMAP_L4_SM_gph_20150526T163000_Vv8010_001.h5,"(""Connection broken: ConnectionAbortedError(103, 'Software caused connection abort')"", ConnectionAbortedError(103, 'Software caused connection abort'))"

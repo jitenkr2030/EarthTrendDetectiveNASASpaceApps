@@ -1,0 +1,2 @@
+month,index,title,time_start,opendap_url,status
+2016-10,29,SMAP_L4_SM_gph_20161004T163000_Vv8010_001.h5,2016-10-04 15:00:00+00:00,https://opendap.earthdata.nasa.gov/collections/C3480440870-NSIDC_CPRD/granules/SMAP_L4_SM_gph_20161004T163000_Vv8010_001.h5,RECOVERED

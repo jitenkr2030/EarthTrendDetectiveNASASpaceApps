@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Credentials
+.netrc
+.earthdata/
+credentials/
+secrets/
+
+# Local/runtime files
+*.log
+*.tmp
+.DS_Store
+
+# Large/generated data
+data/raw/
+data/cache/
+data/downloads/
+
+# Python/Marimo
+.marimo/
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db

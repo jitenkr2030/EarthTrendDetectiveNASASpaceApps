@@ -1,0 +1,106 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a05966cbaf156eab1b138e97ae05e32b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "f1558c99accac65fce905ea236661570",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "09e37dfb03dac238cd6c66dbb11d2ab2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"earthtrend-detective-data-explorer\">\ud83c\udf0d EarthTrend Detective \u2014 Data Explorer</h1>\n<span class=\"paragraph\"><strong>Study region:</strong> Jharkhand, India</span>\n<span class=\"paragraph\"><strong>Dataset:</strong> NASA SMAP L4 Surface Soil Moisture</span>\n<span class=\"paragraph\"><strong>Period:</strong> 2015-04\n\u2192 2015-12</span>\n<span class=\"paragraph\"><strong>Monthly datasets:</strong> 9</span>\n<span class=\"paragraph\"><strong>Grid cells:</strong> 984</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "a4ead6b6f9a667d1d3f8a0d942b249b2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"monthly-dataset-validation\">Monthly Dataset Validation</h2></span><marimo-ui-element object-id='bkHC-0' random-id='654744e8-364b-aae1-8587-6aede2cc1d7a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;mean_soil_moisture&#92;&quot;:0.1246533333471781},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-05&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;mean_soil_moisture&#92;&quot;:0.10714571583321679},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-06&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;mean_soil_moisture&#92;&quot;:0.1599135322531235},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-07&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;mean_soil_moisture&#92;&quot;:0.3125384048469742},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-08&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;mean_soil_moisture&#92;&quot;:0.3371069592999493},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-09&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;mean_soil_moisture&#92;&quot;:0.26868215849437577},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-10&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;mean_soil_moisture&#92;&quot;:0.1886830664453969},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-11&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:238,&#92;&quot;observations_max&#92;&quot;:238,&#92;&quot;mean_soil_moisture&#92;&quot;:0.17003193881891165},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-12&#92;&quot;,&#92;&quot;cells&#92;&quot;:984,&#92;&quot;observations_min&#92;&quot;:247,&#92;&quot;observations_max&#92;&quot;:247,&#92;&quot;mean_soil_moisture&#92;&quot;:0.15173839199272462}]&quot;' data-total-rows='9' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_min&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_max&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;mean_soil_moisture&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "0cc20162aeefadf97e66d9ecb6ddbad8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "79d8da3b0fce83f8150f8cfbc5a21716",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "af7b32e1447c72efcb1c95f8ed5d6b70",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "c346a3ff339f2fc764f84d2b27310eb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Xref-0' random-id='392154e0-b6b2-7a6f-0872-63868ba05509'><marimo-dropdown data-initial-value='[&quot;2015-04&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSelect month&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;2015-04&quot;,&quot;2015-05&quot;,&quot;2015-06&quot;,&quot;2015-07&quot;,&quot;2015-08&quot;,&quot;2015-09&quot;,&quot;2015-10&quot;,&quot;2015-11&quot;,&quot;2015-12&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"selected-month-2015-04\">Selected month: 2015-04</h3>\n<span class=\"paragraph\"><strong>Cells:</strong> 984</span>\n<span class=\"paragraph\"><strong>Mean:</strong> 0.124653 m\u00b3/m\u00b3</span>\n<span class=\"paragraph\"><strong>Minimum:</strong> 0.061567</span>\n<span class=\"paragraph\"><strong>Maximum:</strong> 0.236436</span></span><marimo-ui-element object-id='SFPL-0' random-id='3589b180-1a14-9e20-5e27-d8fc95bbdbb4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;row&#92;&quot;:465,&#92;&quot;col&#92;&quot;:2865,&#92;&quot;latitude&#92;&quot;:25.256832122802734,&#92;&quot;longitude&#92;&quot;:87.52593994140625,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1384226108590761,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;row&#92;&quot;:465,&#92;&quot;col&#92;&quot;:2866,&#92;&quot;latitude&#92;&quot;:25.256832122802734,&#92;&quot;longitude&#92;&quot;:87.61930084228516,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.0920919683451453,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2863,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.3392105102539,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.148873609645913,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2864,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.43257904052734,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1447068158537149,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2865,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.52593994140625,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1409832900079588,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2866,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.61930084228516,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1354953394581874,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2867,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.71266174316406,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1400827671711643,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2862,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.245849609375,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1543789808327953,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2863,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.3392105102539,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1526589338357249,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0},{&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2864,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.43257904052734,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;soil_moisture_mean&#92;&quot;:0.1471042258975406,&#92;&quot;observations&#92;&quot;:240,&#92;&quot;expected_observations&#92;&quot;:240,&#92;&quot;coverage_fraction&#92;&quot;:1.0}]&quot;' data-total-rows='20' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;row&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;col&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;latitude&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;longitude&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;month&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;soil_moisture_mean&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;observations&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;expected_observations&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;coverage_fraction&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

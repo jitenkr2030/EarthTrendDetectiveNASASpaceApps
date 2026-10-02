@@ -1,0 +1,106 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "a05966cbaf156eab1b138e97ae05e32b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "3f49564bf6d048ff1e46834752b1919e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "daeac364921cec65b1b368f82c0ea5ba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "701964013e97295a269b0c31e513005c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"earthtrend-detective-coverage-analysis\">\ud83d\udd0e EarthTrend Detective \u2014 Coverage Analysis</h1>\n<span class=\"paragraph\"><strong>Months currently available:</strong> 9</span>\n<span class=\"paragraph\"><strong>Period:</strong> 2015-04 \u2192 2015-12</span>\n<span class=\"paragraph\"><strong>Grid cells:</strong> 984</span>\n<span class=\"paragraph\"><strong>Complete cells:</strong> 984</span>\n<span class=\"paragraph\"><strong>Incomplete cells:</strong> 0</span>\n<span class=\"paragraph\"><strong>Minimum cell coverage:</strong> 100.0%</span>\n<span class=\"paragraph\"><strong>Maximum cell coverage:</strong> 100.0%</span>\n<blockquote>\n<span class=\"paragraph\">This analysis evaluates data completeness. It does <strong>not</strong>\ndetermine whether soil moisture has increased or decreased.</span>\n</blockquote></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "1fce845e1890967b858065273a7e9908",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='b3861317-e03f-f106-cc97-dbc473518fe8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;row&#92;&quot;:465,&#92;&quot;col&#92;&quot;:2865,&#92;&quot;latitude&#92;&quot;:25.256832122802734,&#92;&quot;longitude&#92;&quot;:87.52593994140625,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;row&#92;&quot;:465,&#92;&quot;col&#92;&quot;:2866,&#92;&quot;latitude&#92;&quot;:25.256832122802734,&#92;&quot;longitude&#92;&quot;:87.61930084228516,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2863,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.3392105102539,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2864,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.43257904052734,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2865,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.52593994140625,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2866,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.61930084228516,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;row&#92;&quot;:466,&#92;&quot;col&#92;&quot;:2867,&#92;&quot;latitude&#92;&quot;:25.178972244262695,&#92;&quot;longitude&#92;&quot;:87.71266174316406,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2862,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.245849609375,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2863,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.3392105102539,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239},{&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;row&#92;&quot;:467,&#92;&quot;col&#92;&quot;:2864,&#92;&quot;latitude&#92;&quot;:25.101160049438477,&#92;&quot;longitude&#92;&quot;:87.43257904052734,&#92;&quot;months_available&#92;&quot;:9,&#92;&quot;expected_months&#92;&quot;:9,&#92;&quot;coverage_percent&#92;&quot;:100.0,&#92;&quot;observations_total&#92;&quot;:2197,&#92;&quot;minimum_monthly_coverage&#92;&quot;:0.9916666666666668,&#92;&quot;mean_monthly_coverage&#92;&quot;:0.998626045400239}]&quot;' data-total-rows='100' data-total-columns='10' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;row&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;col&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;latitude&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;longitude&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;months_available&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;expected_months&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;coverage_percent&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;observations_total&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;minimum_monthly_coverage&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;mean_monthly_coverage&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "19e46d62ee5bb4c52eb790c2ce6101f6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "79d8da3b0fce83f8150f8cfbc5a21716",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "f6572553ae4132f6fd5a90712c9aa1b6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"monthly-coverage\">Monthly Coverage</h2></span><marimo-ui-element object-id='SFPL-0' random-id='c7ab57ff-af96-be9f-d720-8ec92f05e1b2'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-05&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-06&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-07&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-08&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-09&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-10&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min_percent&#92;&quot;:100.0,&#92;&quot;coverage_mean_percent&#92;&quot;:100.0,&#92;&quot;coverage_max_percent&#92;&quot;:100.0},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-11&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:238,&#92;&quot;observations_max&#92;&quot;:238,&#92;&quot;coverage_min_percent&#92;&quot;:99.16666666666669,&#92;&quot;coverage_mean_percent&#92;&quot;:99.16666666666669,&#92;&quot;coverage_max_percent&#92;&quot;:99.16666666666669},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-12&#92;&quot;,&#92;&quot;cells&#92;&quot;:43,&#92;&quot;observations_min&#92;&quot;:247,&#92;&quot;observations_max&#92;&quot;:247,&#92;&quot;coverage_min_percent&#92;&quot;:99.5967741935484,&#92;&quot;coverage_mean_percent&#92;&quot;:99.5967741935484,&#92;&quot;coverage_max_percent&#92;&quot;:99.5967741935484}]&quot;' data-total-rows='9' data-total-columns='7' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_min&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_max&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;coverage_min_percent&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;coverage_mean_percent&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;coverage_max_percent&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

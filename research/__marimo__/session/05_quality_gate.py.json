@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "6eec5c3359e420e637aca7e8e247ce0c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "57f1225e067fa83d7bca898f98a96d21",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "4c3a9f648c9b0ceb3a0ea22a3ac40ba9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"earthtrend-detective-data-quality-gate\">\ud83d\udee1\ufe0f EarthTrend Detective \u2014 Data Quality Gate</h1>\n<span class=\"paragraph\"><strong>Monthly files inspected:</strong> 9</span>\n<span class=\"paragraph\"><strong>PASS:</strong> 9</span>\n<span class=\"paragraph\"><strong>FAIL:</strong> 0</span>\n<span class=\"paragraph\">This gate checks whether each monthly dataset satisfies the\nstructural and value constraints required before scientific\nanalysis.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "e06dbda8b974eac7f4d96aa8d7b3abf7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='5934faa8-6d40-4b32-cd2d-5b68bdc56f9a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-04&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0615672692346076,&#92;&quot;soil_moisture_max&#92;&quot;:0.236436170587937,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-05&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0396991423331201,&#92;&quot;soil_moisture_max&#92;&quot;:0.255023420938561,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-06&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0764004662865772,&#92;&quot;soil_moisture_max&#92;&quot;:0.2686033203577002,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-07&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.2060448894757897,&#92;&quot;soil_moisture_max&#92;&quot;:0.4549633613036525,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-08&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.2355717166417068,&#92;&quot;soil_moisture_max&#92;&quot;:0.4816206751331206,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-09&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.1530339674092829,&#92;&quot;soil_moisture_max&#92;&quot;:0.4435353717456261,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-10&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0918465409608137,&#92;&quot;soil_moisture_max&#92;&quot;:0.3852564424516693,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-11&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:240,&#92;&quot;observations_max&#92;&quot;:240,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0767408163131525,&#92;&quot;soil_moisture_max&#92;&quot;:0.3299011667569478,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;},{&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;month&#92;&quot;:&#92;&quot;2015-12&#92;&quot;,&#92;&quot;rows&#92;&quot;:984,&#92;&quot;unique_cells&#92;&quot;:984,&#92;&quot;duplicate_cells&#92;&quot;:0,&#92;&quot;missing_sm&#92;&quot;:0,&#92;&quot;observations_min&#92;&quot;:248,&#92;&quot;observations_max&#92;&quot;:248,&#92;&quot;coverage_min&#92;&quot;:1.0,&#92;&quot;coverage_max&#92;&quot;:1.0,&#92;&quot;soil_moisture_min&#92;&quot;:0.0682949789859835,&#92;&quot;soil_moisture_max&#92;&quot;:0.2993466386631612,&#92;&quot;coordinate_missing&#92;&quot;:0,&#92;&quot;status&#92;&quot;:&#92;&quot;PASS&#92;&quot;}]&quot;' data-total-rows='9' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;rows&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;unique_cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;duplicate_cells&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;missing_sm&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_min&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;observations_max&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;coverage_min&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;coverage_max&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;soil_moisture_min&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;soil_moisture_max&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;coordinate_missing&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;status&quot;,[&quot;string&quot;,&quot;object&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "be03baf7d96ab05e358291e6fee39699",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"quality-gate-pass\">\u2705 QUALITY GATE: PASS</h2>\n<span class=\"paragraph\">All currently inspected monthly datasets passed the\nautomated structural and value checks.</span>\n<span class=\"paragraph\">No trend conclusion is made by this quality gate.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
