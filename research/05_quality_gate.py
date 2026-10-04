@@ -17,14 +17,22 @@ def _():
 @app.cell
 def _(pd, Path, re):
     data_dir = Path("data/monthly")
-    expected_months = pd.period_range(
-        "2015-04", "2016-12", freq="M"
-    ).astype(str).tolist()
 
     files = sorted(
         p for p in data_dir.glob("*.csv")
         if re.fullmatch(r"\d{4}-\d{2}\.csv", p.name)
     )
+
+    if not files:
+        raise ValueError("No monthly CSV files found.")
+
+    available_months = [p.stem for p in files]
+
+    expected_months = pd.period_range(
+        available_months[0],
+        available_months[-1],
+        freq="M",
+    ).astype(str).tolist()
 
     missing_months = sorted(
         set(expected_months) - {p.stem for p in files}
@@ -163,7 +171,7 @@ def _(mo, quality, expected_months, missing_months):
     mo.md(f"""
     # 🛡️ EarthTrend Detective — Data Quality Gate
 
-    **Study period:** April 2015 – December 2016
+    **Study period:** {expected_months[0]} – {expected_months[-1]}
 
     **Expected months:** {len(expected_months)}
 
@@ -205,16 +213,19 @@ def _(mo, quality):
     failed_rows = quality[quality["status"] == "FAIL"]
 
     if failed_rows.empty:
-        mo.md("""
+        result = mo.md("""
         ## Monthly checks passed
 
         No monthly file failed the configured checks. This does not
         establish a long-term climate or soil-moisture trend.
         """)
     else:
-        mo.md("## Files requiring investigation")
+        result = mo.vstack([
+            mo.md("## Files requiring investigation"),
+            mo.ui.table(failed_rows),
+        ])
 
-        mo.ui.table(failed_rows)
+    result
 
     return
 

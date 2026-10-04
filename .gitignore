@@ -27,3 +27,14 @@ data/downloads/
 
 # OS
 Thumbs.db
+
+# EarthTrend generated processing artifacts
+data/checkpoints/
+logs/failed_granules_*.csv
+logs/recovered_granules_*.csv
+
+# Marimo generated sessions
+research/__marimo__/session/
+
+# Local research backups
+research/*_backup.py
