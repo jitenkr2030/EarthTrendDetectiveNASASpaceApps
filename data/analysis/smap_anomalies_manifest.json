@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "input": "data/analysis/smap_monthly_jharkhand.csv",
+  "climatology_input": "data/analysis/smap_climatology.csv",
+  "output": "data/analysis/smap_anomalies_jharkhand.csv",
+  "source_period": {
+    "start": "2015-04-01",
+    "end": "2026-09-01"
+  },
+  "months": 138,
+  "spatial_cells": 984,
+  "records": 135792,
+  "expected_records": 135792,
+  "anomaly_definition": "observed soil moisture minus spatial cell/calendar-month climatological mean",
+  "standardized_anomaly_definition": "(observed soil moisture - climatological mean) / climatological standard deviation",
+  "zero_std_records": 0,
+  "absolute_anomaly_range": {
+    "min": -0.17359629557538211,
+    "max": 0.20329171927148182
+  },
+  "standardized_anomaly_range": {
+    "min": -2.978381473330494,
+    "max": 2.8565341516842606
+  },
+  "mean_absolute_anomaly": -7.046770116615739e-15,
+  "anomaly_class_counts": {
+    "near normal": 97153,
+    "dry": 11608,
+    "wet": 11525,
+    "very wet": 6229,
+    "extremely wet": 4261,
+    "very dry": 3360,
+    "extremely dry": 1656
+  },
+  "top_10_statewide_anomaly_months": [
+    {
+      "date": "2021-06-01",
+      "mean_anomaly": 0.11689685833576044,
+      "mean_standardized_anomaly": 2.318409446191681
+    },
+    {
+      "date": "2015-10-01",
+      "mean_anomaly": -0.08804371443641204,
+      "mean_standardized_anomaly": -1.9630338201611086
+    },
+    {
+      "date": "2020-03-01",
+      "mean_anomaly": 0.07941351810341615,
+      "mean_standardized_anomaly": 2.3864988223623964
+    },
+    {
+      "date": "2022-01-01",
+      "mean_anomaly": 0.07450465905758255,
+      "mean_standardized_anomaly": 1.8032480583803052
+    },
+    {
+      "date": "2022-02-01",
+      "mean_anomaly": 0.07396552797564349,
+      "mean_standardized_anomaly": 1.9985801215222014
+    },
+    {
+      "date": "2020-01-01",
+      "mean_anomaly": 0.070894538631457,
+      "mean_standardized_anomaly": 1.7866399616934365
+    },
+    {
+      "date": "2022-07-01",
+      "mean_anomaly": -0.06954757969640192,
+      "mean_standardized_anomaly": -1.3249883559260645
+    },
+    {
+      "date": "2020-06-01",
+      "mean_anomaly": 0.06432153249004083,
+      "mean_standardized_anomaly": 1.2915904627927244
+    },
+    {
+      "date": "2018-10-01",
+      "mean_anomaly": -0.06096949630865532,
+      "mean_standardized_anomaly": -1.3776783129557275
+    },
+    {
+      "date": "2019-11-01",
+      "mean_anomaly": 0.058511441387923226,
+      "mean_standardized_anomaly": 1.6321275691689197
+    }
+  ]
+}

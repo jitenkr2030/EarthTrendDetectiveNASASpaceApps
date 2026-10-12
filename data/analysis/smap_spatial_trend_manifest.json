@@ -1,0 +1,48 @@
+{
+  "module": "13_spatial_trend",
+  "status": "PASS",
+  "input": "/root/earthtrend-detective/data/analysis/smap_seasonal_cell_trends.csv",
+  "dataset": {
+    "cells": 984,
+    "cell_season_rows": 3936,
+    "seasons": [
+      "winter",
+      "pre-monsoon",
+      "monsoon",
+      "post-monsoon"
+    ]
+  },
+  "statistics": {
+    "alpha": 0.05,
+    "raw_significant_results": 7,
+    "fdr_significant_results": 0,
+    "spatial_hotspot_results": 0,
+    "spatial_cluster_results": 0,
+    "isolated_significant_results": 0
+  },
+  "multiple_testing": {
+    "method": "Benjamini-Hochberg FDR",
+    "family": "each season separately",
+    "threshold": 0.05
+  },
+  "spatial_method": {
+    "grid": "SMAP row/col grid",
+    "connectivity": "8-connected",
+    "hotspot_rule": "FDR-significant cell with at least 2 same-direction FDR-significant neighbors",
+    "cluster_rule": "FDR-significant cell with at least 1 FDR-significant neighbor"
+  },
+  "interpretation_note": "Spatial hotspot labels indicate statistical and local spatial clustering evidence. They do not by themselves establish a physical cause or causal mechanism.",
+  "outputs": {
+    "main": "/root/earthtrend-detective/data/analysis/smap_spatial_trend_hotspots.csv",
+    "summary": "/root/earthtrend-detective/data/analysis/smap_spatial_trend_summary.csv",
+    "significant_inventory": "/root/earthtrend-detective/data/analysis/smap_significant_spatial_cells.csv",
+    "manifest": "/root/earthtrend-detective/data/analysis/smap_spatial_trend_manifest.json"
+  },
+  "validation": {
+    "main_rows_pass": true,
+    "summary_rows_pass": true,
+    "significant_inventory_pass": true,
+    "duplicate_check_pass": true,
+    "status": "PASS"
+  }
+}

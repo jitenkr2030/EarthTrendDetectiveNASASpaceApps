@@ -1,0 +1,451 @@
+{
+  "module": "14_extreme_events",
+  "status": "PASS",
+  "input": "/root/earthtrend-detective/data/analysis/smap_anomalies_jharkhand.csv",
+  "outputs": {
+    "extreme_cell_months": "/root/earthtrend-detective/data/analysis/smap_extreme_cell_months.csv",
+    "monthly_summary": "/root/earthtrend-detective/data/analysis/smap_extreme_monthly_summary.csv",
+    "event_episodes": "/root/earthtrend-detective/data/analysis/smap_extreme_events.csv",
+    "manifest": "/root/earthtrend-detective/data/analysis/smap_extreme_event_manifest.json"
+  },
+  "dataset": {
+    "months": 138,
+    "cells": 984,
+    "records": 135792,
+    "start": "2015-04-01 00:00:00",
+    "end": "2026-09-01 00:00:00"
+  },
+  "method": {
+    "extreme_dry_threshold_z": -2.0,
+    "extreme_wet_threshold_z": 2.0,
+    "minimum_event_fraction": 0.05,
+    "minimum_event_cells": 50,
+    "event_definition": "Consecutive calendar months with at least 5 percent of spatial cells extreme in the same dominant direction.",
+    "severity_definition": "Extreme spatial fraction multiplied by mean absolute standardized anomaly among affected cells."
+  },
+  "results": {
+    "extreme_dry_cell_months": 1656,
+    "extreme_wet_cell_months": 4261,
+    "total_extreme_cell_months": 5917,
+    "dry_candidate_months": 6,
+    "wet_candidate_months": 12,
+    "total_event_episodes": 9,
+    "dry_event_episodes": 4,
+    "wet_event_episodes": 5,
+    "mixed_event_episodes": 0,
+    "unique_cells_with_extremes": 984
+  },
+  "top_repeated_extreme_cells": [
+    {
+      "row": 500,
+      "col": 2846,
+      "latitude": 22.5591945648,
+      "longitude": 85.7520751953,
+      "extreme_months": 10,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 7,
+      "mean_z": 0.84476727115,
+      "minimum_z": -2.6051571972,
+      "maximum_z": 2.4955069795
+    },
+    {
+      "row": 507,
+      "col": 2848,
+      "latitude": 22.0260181427,
+      "longitude": 85.9387969971,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6927120793333335,
+      "minimum_z": -2.8007971606,
+      "maximum_z": 2.4405648669
+    },
+    {
+      "row": 477,
+      "col": 2866,
+      "latitude": 24.3256721497,
+      "longitude": 87.6193008423,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.7656485653444444,
+      "minimum_z": -2.3947488471,
+      "maximum_z": 2.5162470223
+    },
+    {
+      "row": 504,
+      "col": 2856,
+      "latitude": 22.254278183,
+      "longitude": 86.6856842041,
+      "extreme_months": 9,
+      "dry_extreme_months": 4,
+      "wet_extreme_months": 5,
+      "mean_z": 0.12264848037777777,
+      "minimum_z": -2.7690759969,
+      "maximum_z": 2.2630282384
+    },
+    {
+      "row": 472,
+      "col": 2869,
+      "latitude": 24.7128257751,
+      "longitude": 87.8993835449,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.7698764869333333,
+      "minimum_z": -2.0585683716,
+      "maximum_z": 2.2820890495
+    },
+    {
+      "row": 501,
+      "col": 2829,
+      "latitude": 22.4829044342,
+      "longitude": 84.1649398804,
+      "extreme_months": 9,
+      "dry_extreme_months": 1,
+      "wet_extreme_months": 8,
+      "mean_z": 1.7210200440666668,
+      "minimum_z": -2.012895634,
+      "maximum_z": 2.6076697965
+    },
+    {
+      "row": 470,
+      "col": 2867,
+      "latitude": 24.8680152893,
+      "longitude": 87.7126617432,
+      "extreme_months": 9,
+      "dry_extreme_months": 2,
+      "wet_extreme_months": 7,
+      "mean_z": 1.1727411063,
+      "minimum_z": -2.2362659235,
+      "maximum_z": 2.3448416839
+    },
+    {
+      "row": 473,
+      "col": 2866,
+      "latitude": 24.63530159,
+      "longitude": 87.6193008423,
+      "extreme_months": 9,
+      "dry_extreme_months": 2,
+      "wet_extreme_months": 7,
+      "mean_z": 1.2112870715333333,
+      "minimum_z": -2.2372464466,
+      "maximum_z": 2.4017914457
+    },
+    {
+      "row": 505,
+      "col": 2846,
+      "latitude": 22.1781520844,
+      "longitude": 85.7520751953,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6486368600222223,
+      "minimum_z": -2.9783814733,
+      "maximum_z": 2.3918663096
+    },
+    {
+      "row": 496,
+      "col": 2849,
+      "latitude": 22.8647689819,
+      "longitude": 86.0321578979,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.686708138922222,
+      "minimum_z": -2.7148727821,
+      "maximum_z": 2.556520096
+    },
+    {
+      "row": 478,
+      "col": 2866,
+      "latitude": 24.248380661,
+      "longitude": 87.6193008423,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.7934903317,
+      "minimum_z": -2.2224182755,
+      "maximum_z": 2.4171698873
+    },
+    {
+      "row": 501,
+      "col": 2845,
+      "latitude": 22.4829044342,
+      "longitude": 85.6587142944,
+      "extreme_months": 9,
+      "dry_extreme_months": 2,
+      "wet_extreme_months": 7,
+      "mean_z": 1.1782856832000002,
+      "minimum_z": -2.7196590566,
+      "maximum_z": 2.4124565691
+    },
+    {
+      "row": 500,
+      "col": 2845,
+      "latitude": 22.5591945648,
+      "longitude": 85.6587142944,
+      "extreme_months": 9,
+      "dry_extreme_months": 2,
+      "wet_extreme_months": 7,
+      "mean_z": 1.230246105388889,
+      "minimum_z": -2.5964577379,
+      "maximum_z": 2.5218933138
+    },
+    {
+      "row": 495,
+      "col": 2845,
+      "latitude": 22.9412670135,
+      "longitude": 85.6587142944,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6665841082555556,
+      "minimum_z": -2.6353703895,
+      "maximum_z": 2.630696705
+    },
+    {
+      "row": 485,
+      "col": 2853,
+      "latitude": 23.7086105347,
+      "longitude": 86.4056015015,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.8498593844333333,
+      "minimum_z": -2.2183646819,
+      "maximum_z": 2.5195500289
+    },
+    {
+      "row": 507,
+      "col": 2847,
+      "latitude": 22.0260181427,
+      "longitude": 85.8454360962,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6889865444333334,
+      "minimum_z": -2.8451080888,
+      "maximum_z": 2.4222057801
+    },
+    {
+      "row": 506,
+      "col": 2846,
+      "latitude": 22.1020641327,
+      "longitude": 85.7520751953,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6534299502777778,
+      "minimum_z": -2.9499003069,
+      "maximum_z": 2.4333821513
+    },
+    {
+      "row": 506,
+      "col": 2845,
+      "latitude": 22.1020641327,
+      "longitude": 85.6587142944,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6527383536333333,
+      "minimum_z": -2.9585573291,
+      "maximum_z": 2.4231997758
+    },
+    {
+      "row": 495,
+      "col": 2847,
+      "latitude": 22.9412670135,
+      "longitude": 85.8454360962,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6917254676555555,
+      "minimum_z": -2.6231114672,
+      "maximum_z": 2.5703338544
+    },
+    {
+      "row": 495,
+      "col": 2846,
+      "latitude": 22.9412670135,
+      "longitude": 85.7520751953,
+      "extreme_months": 9,
+      "dry_extreme_months": 3,
+      "wet_extreme_months": 6,
+      "mean_z": 0.6866775447444444,
+      "minimum_z": -2.6214552904,
+      "maximum_z": 2.6215835542
+    }
+  ],
+  "top_dry_months": [
+    {
+      "date": "2015-09-01 00:00:00",
+      "dry_extreme_cells": 607,
+      "dry_extreme_fraction": 0.616869918699187,
+      "dry_mean_z": -2.4624006209711697,
+      "dry_min_z": -2.9783814733,
+      "dry_severity": 1.518980870863313
+    },
+    {
+      "date": "2015-10-01 00:00:00",
+      "dry_extreme_cells": 507,
+      "dry_extreme_fraction": 0.5152439024390244,
+      "dry_mean_z": -2.2288473013532544,
+      "dry_min_z": -2.7229285847,
+      "dry_severity": 1.148399981489939
+    },
+    {
+      "date": "2022-08-01 00:00:00",
+      "dry_extreme_cells": 203,
+      "dry_extreme_fraction": 0.20630081300813008,
+      "dry_mean_z": -2.1537558377408867,
+      "dry_min_z": -2.5568940956,
+      "dry_severity": 0.44432158034695124
+    },
+    {
+      "date": "2019-08-01 00:00:00",
+      "dry_extreme_cells": 111,
+      "dry_extreme_fraction": 0.11280487804878049,
+      "dry_mean_z": -2.259429698189189,
+      "dry_min_z": -2.6353703895,
+      "dry_severity": 0.25487469156402437
+    },
+    {
+      "date": "2022-07-01 00:00:00",
+      "dry_extreme_cells": 92,
+      "dry_extreme_fraction": 0.09349593495934959,
+      "dry_mean_z": -2.119965982620652,
+      "dry_min_z": -2.3266451177,
+      "dry_severity": 0.19820820162713412
+    },
+    {
+      "date": "2023-08-01 00:00:00",
+      "dry_extreme_cells": 67,
+      "dry_extreme_fraction": 0.06808943089430894,
+      "dry_mean_z": -2.181114174417911,
+      "dry_min_z": -2.4622612248,
+      "dry_severity": 0.14851082285162603
+    },
+    {
+      "date": "2018-11-01 00:00:00",
+      "dry_extreme_cells": 20,
+      "dry_extreme_fraction": 0.02032520325203252,
+      "dry_mean_z": -2.0813020124599997,
+      "dry_min_z": -2.2633277402,
+      "dry_severity": 0.042302886432113815
+    },
+    {
+      "date": "2015-11-01 00:00:00",
+      "dry_extreme_cells": 14,
+      "dry_extreme_fraction": 0.014227642276422764,
+      "dry_mean_z": -2.0752924773928574,
+      "dry_min_z": -2.1747048366,
+      "dry_severity": 0.02952651898729675
+    },
+    {
+      "date": "2018-10-01 00:00:00",
+      "dry_extreme_cells": 10,
+      "dry_extreme_fraction": 0.01016260162601626,
+      "dry_mean_z": -2.04564813133,
+      "dry_min_z": -2.0855404694,
+      "dry_severity": 0.020789107025711382
+    },
+    {
+      "date": "2025-09-01 00:00:00",
+      "dry_extreme_cells": 9,
+      "dry_extreme_fraction": 0.009146341463414634,
+      "dry_mean_z": -2.092340348377778,
+      "dry_min_z": -2.265646918,
+      "dry_severity": 0.019137259283943088
+    }
+  ],
+  "top_wet_months": [
+    {
+      "date": "2021-06-01 00:00:00",
+      "wet_extreme_cells": 941,
+      "wet_extreme_fraction": 0.9563008130081301,
+      "wet_mean_z": 2.335223111584166,
+      "wet_max_z": 2.6759254885,
+      "wet_severity": 2.2331757601633133
+    },
+    {
+      "date": "2020-03-01 00:00:00",
+      "wet_extreme_cells": 875,
+      "wet_extreme_fraction": 0.8892276422764228,
+      "wet_mean_z": 2.4812251173834285,
+      "wet_max_z": 2.8565341517,
+      "wet_severity": 2.2063739610879067
+    },
+    {
+      "date": "2022-02-01 00:00:00",
+      "wet_extreme_cells": 568,
+      "wet_extreme_fraction": 0.5772357723577236,
+      "wet_mean_z": 2.282999356462676,
+      "wet_max_z": 2.7010646428,
+      "wet_severity": 1.3178288968199188
+    },
+    {
+      "date": "2021-05-01 00:00:00",
+      "wet_extreme_cells": 553,
+      "wet_extreme_fraction": 0.5619918699186992,
+      "wet_mean_z": 2.306012358162206,
+      "wet_max_z": 2.6845264272,
+      "wet_severity": 1.2959601972192074
+    },
+    {
+      "date": "2022-01-01 00:00:00",
+      "wet_extreme_cells": 346,
+      "wet_extreme_fraction": 0.3516260162601626,
+      "wet_mean_z": 2.165852504712717,
+      "wet_max_z": 2.4760257873,
+      "wet_severity": 0.7615700880392278
+    },
+    {
+      "date": "2020-01-01 00:00:00",
+      "wet_extreme_cells": 244,
+      "wet_extreme_fraction": 0.24796747967479674,
+      "wet_mean_z": 2.1808622666766397,
+      "wet_max_z": 2.6425467777,
+      "wet_severity": 0.5407829197856708
+    },
+    {
+      "date": "2020-04-01 00:00:00",
+      "wet_extreme_cells": 158,
+      "wet_extreme_fraction": 0.16056910569105692,
+      "wet_mean_z": 2.2495864723101264,
+      "wet_max_z": 2.65187684,
+      "wet_severity": 0.3612140880335366
+    },
+    {
+      "date": "2016-09-01 00:00:00",
+      "wet_extreme_cells": 117,
+      "wet_extreme_fraction": 0.11890243902439024,
+      "wet_mean_z": 2.219828557151282,
+      "wet_max_z": 2.4510700302,
+      "wet_severity": 0.26394302966128047
+    },
+    {
+      "date": "2019-12-01 00:00:00",
+      "wet_extreme_cells": 111,
+      "wet_extreme_fraction": 0.11280487804878049,
+      "wet_mean_z": 2.147464051821622,
+      "wet_max_z": 2.4358153251,
+      "wet_severity": 0.2422444204798781
+    },
+    {
+      "date": "2019-11-01 00:00:00",
+      "wet_extreme_cells": 107,
+      "wet_extreme_fraction": 0.10873983739837398,
+      "wet_mean_z": 2.1183427817392526,
+      "wet_max_z": 2.4023165438,
+      "wet_severity": 0.23034824964034556
+    }
+  ],
+  "scientific_notes": [
+    "Extreme events are identified from standardized soil-moisture anomalies relative to each cell's calendar-month climatology.",
+    "A long-term non-significant trend does not imply absence of episodic dry or wet extremes.",
+    "Event detection describes temporal and spatial patterns and does not establish causation.",
+    "The 5 percent state-event threshold is an analytical definition, not a physical law.",
+    "Cross-variable evidence is required before attributing extremes to rainfall, temperature, vegetation, or other drivers."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "analysis": "Autocorrelation-aware significance of SMAP-GPM correlation",
+  "alpha": 0.05,
+  "method": {
+    "lag1_autocorrelation": "Pearson correlation between consecutive observations",
+    "effective_sample_size": "N * (1-r1_x*r1_y) / (1+r1_x*r1_y)",
+    "adjusted_significance": "Correlation t-test using effective sample size"
+  },
+  "overall_period": {
+    "start": "2015-04-01",
+    "end": "2025-09-01",
+    "records": 126
+  },
+  "seasonal_method": "Season-year means using complete seasons only",
+  "results": [
+    {
+      "analysis": "overall_monthly",
+      "n": 126,
+      "pearson_r": 0.7135358910048899,
+      "raw_p": 6.877127936542278e-21,
+      "spearman_rho": 0.7206569178852644,
+      "spearman_p": 1.8496407761051196e-21,
+      "rainfall_lag1_acf": 0.29855931260144897,
+      "soil_moisture_lag1_acf": 0.6610652332193583,
+      "effective_n": 84.46175631786558,
+      "adjusted_p": 2.1999110689728813e-14,
+      "significant_after_adjustment": true
+    },
+    {
+      "analysis": "season_winter",
+      "n": 10,
+      "pearson_r": 0.9333117336626413,
+      "raw_p": 7.979760286941157e-05,
+      "spearman_rho": 0.8060606060606059,
+      "spearman_p": 0.004862061101964606,
+      "rainfall_lag1_acf": -0.5299071033302551,
+      "soil_moisture_lag1_acf": -0.44581850465337897,
+      "effective_n": 6.178057088772193,
+      "adjusted_p": 0.005335555721570446,
+      "significant_after_adjustment": true,
+      "complete_seasons": 10,
+      "season_year_start": 2016,
+      "season_year_end": 2025
+    },
+    {
+      "analysis": "season_pre-monsoon",
+      "n": 10,
+      "pearson_r": 0.817326760411858,
+      "raw_p": 0.0038829222407047144,
+      "spearman_rho": 0.8060606060606059,
+      "spearman_p": 0.004862061101964606,
+      "rainfall_lag1_acf": 0.09733747865341634,
+      "soil_moisture_lag1_acf": 0.24577531487552765,
+      "effective_n": 9.532715917640347,
+      "adjusted_p": 0.00515679839766567,
+      "significant_after_adjustment": true,
+      "complete_seasons": 10,
+      "season_year_start": 2016,
+      "season_year_end": 2025
+    },
+    {
+      "analysis": "season_monsoon",
+      "n": 11,
+      "pearson_r": 0.5417954237690006,
+      "raw_p": 0.08515086722175215,
+      "spearman_rho": 0.5272727272727273,
+      "spearman_p": 0.09556521835315422,
+      "rainfall_lag1_acf": 0.28624130367334216,
+      "soil_moisture_lag1_acf": 0.07498747086883564,
+      "effective_n": 10.537703712684248,
+      "adjusted_p": 0.09406599296086553,
+      "significant_after_adjustment": false,
+      "complete_seasons": 11,
+      "season_year_start": 2015,
+      "season_year_end": 2025
+    },
+    {
+      "analysis": "season_post-monsoon",
+      "n": 10,
+      "pearson_r": 0.7278158040937038,
+      "raw_p": 0.017024098541884174,
+      "spearman_rho": 0.8545454545454544,
+      "spearman_p": 0.0016368033159867143,
+      "rainfall_lag1_acf": -0.27340856837639954,
+      "soil_moisture_lag1_acf": -0.4034131964870617,
+      "effective_n": 8.01320436214444,
+      "adjusted_p": 0.04044328790302569,
+      "significant_after_adjustment": true,
+      "complete_seasons": 10,
+      "season_year_start": 2015,
+      "season_year_end": 2024
+    }
+  ]
+}

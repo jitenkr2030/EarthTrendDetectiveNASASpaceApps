@@ -38,3 +38,28 @@ research/__marimo__/session/
 
 # Local research backups
 research/*_backup.py
+
+# Parallel SMAP processing artifacts
+data/checkpoints_parallel/
+logs/failed_granules_parallel_*.csv
+
+# Local benchmark experiments
+tools_*benchmark.py
+data/harmony_benchmark/
+
+# Raw satellite archives: keep locally, do not add to Git
+data/gpm_monthly/
+data/gpm_test/
+data/analysis/smap_anomalies_jharkhand.csv
+data/analysis/gpm_cell_anomalies_jharkhand.csv
+
+# Intermediate notebook versions
+research/*.bak
+research/*.backup
+research/*before*.py
+research/*broken*.py
+research/*error*.py
+
+# Generated Python artifacts
+__pycache__/
+*.py[cod]

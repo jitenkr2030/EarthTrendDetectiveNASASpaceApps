@@ -1,0 +1,374 @@
+{
+  "project": "EarthTrend Detective",
+  "case": "Case #001 — Jharkhand",
+  "generated_at_utc": "2026-10-07T10:39:42.935702+00:00",
+  "status": "PASS",
+  "DATA": {
+    "region": "Jharkhand, India",
+    "primary_variable": "SMAP surface soil moisture",
+    "smap_product": "SPL4SMGP Version 008",
+    "smap_variable": "/Geophysical_Data/sm_surface",
+    "smap_units": "m3/m3",
+    "smap_start": "2015-04-01",
+    "smap_end": "2026-09-01",
+    "smap_months": 138,
+    "smap_cells": 984,
+    "smap_records": 135792,
+    "gpm_product": "GPM IMERG Monthly Version 07B",
+    "gpm_common_start": "2015-04-01",
+    "gpm_common_end": "2025-09-01",
+    "gpm_common_months": 126
+  },
+  "EVIDENCE": {
+    "LONG_TERM_TREND": {
+      "sen_slope_per_month": -1.1660657433571201e-05,
+      "sen_slope_per_year": -0.00013992788920285442,
+      "kendall_tau": -0.0049719665714587965,
+      "p_value": 0.9310586616605492,
+      "significant_at_0_05": false,
+      "trend_class": "non-significant decreasing",
+      "total_cells": 984,
+      "significant_cells": 0,
+      "significant_fraction": 0.0,
+      "increasing_cells": 465,
+      "decreasing_cells": 519,
+      "significant_increasing_cells": 0,
+      "significant_decreasing_cells": 0
+    },
+    "SEASONAL_TREND": {
+      "state_seasons": 4,
+      "significant_state_seasons": 0,
+      "cell_season_results": 3936,
+      "significant_cell_seasons_raw": 7,
+      "increasing_cell_seasons": 1823,
+      "decreasing_cell_seasons": 2113,
+      "season_definition": {
+        "winter": "January-February",
+        "pre-monsoon": "March-May",
+        "monsoon": "June-September",
+        "post-monsoon": "October-December"
+      },
+      "statistical_note": "This is a first-pass seasonal monotonic trend test. It is not an autocorrelation-corrected Seasonal Mann-Kendall implementation."
+    },
+    "SPATIAL_TREND": {
+      "raw_significant_results": 7,
+      "fdr_significant_results": 0,
+      "spatial_hotspot_results": 0,
+      "spatial_cluster_results": 0,
+      "isolated_significant_results": 0,
+      "fdr_method": "Benjamini-Hochberg FDR",
+      "fdr_family": "each season separately",
+      "fdr_threshold": 0.05,
+      "connectivity": "8-connected"
+    },
+    "EXTREME_EVENTS": {
+      "extreme_dry_cell_months": 1656,
+      "extreme_wet_cell_months": 4261,
+      "total_extreme_cell_months": 5917,
+      "dry_candidate_months": 6,
+      "wet_candidate_months": 12,
+      "total_event_episodes": 9,
+      "dry_event_episodes": 4,
+      "wet_event_episodes": 5,
+      "mixed_event_episodes": 0,
+      "unique_cells_with_extremes": 984,
+      "extreme_dry_threshold_z": -2.0,
+      "extreme_wet_threshold_z": 2.0,
+      "minimum_event_fraction": 0.05
+    },
+    "RAINFALL_SAME_MONTH": {
+      "common_months": 126,
+      "period_start": "2015-04-01",
+      "period_end": "2025-09-01",
+      "standardized_pearson_r": 0.7135358910048899,
+      "standardized_pearson_p": 6.877127936542278e-21,
+      "standardized_spearman_rho": 0.7206569178852644,
+      "standardized_spearman_p": 1.8496407761051196e-21,
+      "raw_pearson_r": 0.6987207861845376,
+      "raw_pearson_p": 9.335987566319946e-20,
+      "simultaneous_events": {
+        "both_dry_1sigma": 6,
+        "both_very_dry_1_5sigma": 2,
+        "both_extreme_dry_2sigma": 0,
+        "both_wet_1sigma": 10,
+        "both_very_wet_1_5sigma": 5,
+        "both_extreme_wet_2sigma": 2
+      }
+    },
+    "RAINFALL_LAG": {
+      "tested_lags_months": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "same_month_pearson_r": 0.7135358910048899,
+      "best_absolute_pearson_lag_months": 0,
+      "best_absolute_pearson_r": 0.7135358910048899,
+      "interpretation": "The strongest tested association occurs in the same month. Rainfall anomalies at 1–3 month lags do not exceed the same-month association.",
+      "results": [
+        {
+          "lag_months": 0,
+          "n": 126,
+          "pearson_r": 0.7135358910048899,
+          "pearson_p": 6.877127936542278e-21,
+          "spearman_rho": 0.7206569178852644,
+          "spearman_p": 1.8496407761051196e-21
+        },
+        {
+          "lag_months": 1,
+          "n": 125,
+          "pearson_r": 0.600056121362343,
+          "pearson_p": 1.40993048721769e-13,
+          "spearman_rho": 0.6046758832565284,
+          "spearman_p": 8.178921575934328e-14
+        },
+        {
+          "lag_months": 2,
+          "n": 124,
+          "pearson_r": 0.3779862831476887,
+          "pearson_p": 1.5037407371157617e-05,
+          "spearman_rho": 0.39754523996852864,
+          "spearman_p": 4.832643833393522e-06
+        },
+        {
+          "lag_months": 3,
+          "n": 123,
+          "pearson_r": 0.20314023087932065,
+          "pearson_p": 0.024228839927802115,
+          "spearman_rho": 0.1699384762224143,
+          "spearman_p": 0.060222970401308674
+        }
+      ]
+    },
+    "RAINFALL_SEASONAL": {
+      "strongest_season": "winter",
+      "strongest_pearson_r": 0.8889192253344629,
+      "results": [
+        {
+          "season": "winter",
+          "n": 20,
+          "pearson_r": 0.8889192253344629,
+          "pearson_p": 1.6236006395268739e-07,
+          "spearman_rho": 0.8150375939849623,
+          "spearman_p": 1.2033925213644683e-05
+        },
+        {
+          "season": "pre-monsoon",
+          "n": 32,
+          "pearson_r": 0.8645820798013256,
+          "pearson_p": 1.7878977123401822e-10,
+          "spearman_rho": 0.8218475073313783,
+          "spearman_p": 8.095076525786553e-09
+        },
+        {
+          "season": "monsoon",
+          "n": 44,
+          "pearson_r": 0.5484267917034946,
+          "pearson_p": 0.00011614902573776582,
+          "spearman_rho": 0.6036645525017619,
+          "spearman_p": 1.4381680522980453e-05
+        },
+        {
+          "season": "post-monsoon",
+          "n": 30,
+          "pearson_r": 0.6653071603818531,
+          "pearson_p": 6.035531599686068e-05,
+          "spearman_rho": 0.7245828698553948,
+          "spearman_p": 5.964336281407346e-06
+        }
+      ]
+    },
+    "RAINFALL_AUTOCORRELATION_AWARE": {
+      "alpha": 0.05,
+      "method": {
+        "lag1_autocorrelation": "Pearson correlation between consecutive observations",
+        "effective_sample_size": "N * (1-r1_x*r1_y) / (1+r1_x*r1_y)",
+        "adjusted_significance": "Correlation t-test using effective sample size"
+      },
+      "overall_period": {
+        "start": "2015-04-01",
+        "end": "2025-09-01",
+        "records": 126
+      },
+      "seasonal_method": "Season-year means using complete seasons only",
+      "results": [
+        {
+          "analysis": "overall_monthly",
+          "n": 126,
+          "pearson_r": 0.7135358910048899,
+          "raw_p": 6.877127936542278e-21,
+          "spearman_rho": 0.7206569178852644,
+          "spearman_p": 1.8496407761051196e-21,
+          "rainfall_lag1_acf": 0.29855931260144897,
+          "soil_moisture_lag1_acf": 0.6610652332193583,
+          "effective_n": 84.46175631786558,
+          "adjusted_p": 2.1999110689728813e-14,
+          "significant_after_adjustment": true
+        },
+        {
+          "analysis": "season_winter",
+          "n": 10,
+          "pearson_r": 0.9333117336626413,
+          "raw_p": 7.979760286941157e-05,
+          "spearman_rho": 0.8060606060606059,
+          "spearman_p": 0.004862061101964606,
+          "rainfall_lag1_acf": -0.5299071033302551,
+          "soil_moisture_lag1_acf": -0.44581850465337897,
+          "effective_n": 6.178057088772193,
+          "adjusted_p": 0.005335555721570446,
+          "significant_after_adjustment": true,
+          "complete_seasons": 10,
+          "season_year_start": 2016,
+          "season_year_end": 2025
+        },
+        {
+          "analysis": "season_pre-monsoon",
+          "n": 10,
+          "pearson_r": 0.817326760411858,
+          "raw_p": 0.0038829222407047144,
+          "spearman_rho": 0.8060606060606059,
+          "spearman_p": 0.004862061101964606,
+          "rainfall_lag1_acf": 0.09733747865341634,
+          "soil_moisture_lag1_acf": 0.24577531487552765,
+          "effective_n": 9.532715917640347,
+          "adjusted_p": 0.00515679839766567,
+          "significant_after_adjustment": true,
+          "complete_seasons": 10,
+          "season_year_start": 2016,
+          "season_year_end": 2025
+        },
+        {
+          "analysis": "season_monsoon",
+          "n": 11,
+          "pearson_r": 0.5417954237690006,
+          "raw_p": 0.08515086722175215,
+          "spearman_rho": 0.5272727272727273,
+          "spearman_p": 0.09556521835315422,
+          "rainfall_lag1_acf": 0.28624130367334216,
+          "soil_moisture_lag1_acf": 0.07498747086883564,
+          "effective_n": 10.537703712684248,
+          "adjusted_p": 0.09406599296086553,
+          "significant_after_adjustment": false,
+          "complete_seasons": 11,
+          "season_year_start": 2015,
+          "season_year_end": 2025
+        },
+        {
+          "analysis": "season_post-monsoon",
+          "n": 10,
+          "pearson_r": 0.7278158040937038,
+          "raw_p": 0.017024098541884174,
+          "spearman_rho": 0.8545454545454544,
+          "spearman_p": 0.0016368033159867143,
+          "rainfall_lag1_acf": -0.27340856837639954,
+          "soil_moisture_lag1_acf": -0.4034131964870617,
+          "effective_n": 8.01320436214444,
+          "adjusted_p": 0.04044328790302569,
+          "significant_after_adjustment": true,
+          "complete_seasons": 10,
+          "season_year_start": 2015,
+          "season_year_end": 2024
+        }
+      ]
+    },
+    "RAINFALL_SPATIAL": {
+      "smap_cells": 984,
+      "gpm_cells": 703,
+      "mapped_smap_cells": 984,
+      "joined_rows": 123984,
+      "correlated_cells": 984,
+      "fdr_significant_cells": 984,
+      "pearson_r_min": 0.5431052852369994,
+      "pearson_r_mean": 0.6724477519424884,
+      "pearson_r_median": 0.6791204493457002,
+      "pearson_r_max": 0.790308222475283,
+      "mapping_distance_km_mean": 4.291256246485042,
+      "mapping_distance_km_max": 13.595362796651097,
+      "fdr_method": "Benjamini-Hochberg"
+    },
+    "SPATIAL_SENSITIVITY": {
+      "thresholds_tested_km": [
+        5.0,
+        7.5,
+        10.0
+      ],
+      "total_valid_cells": 984,
+      "results": [
+        {
+          "threshold": "all_cells",
+          "distance_threshold_km": null,
+          "cells": 984,
+          "mean_r": 0.6724477519424884,
+          "median_r": 0.6791204493457002,
+          "min_r": 0.5431052852369994,
+          "max_r": 0.790308222475283,
+          "positive_percent": 100.0,
+          "r_ge_0_5_percent": 100.0,
+          "r_ge_0_7_percent": 34.34959349593496,
+          "mean_mapping_distance_km": 4.291256246485042,
+          "max_mapping_distance_km": 13.595362796651097
+        },
+        {
+          "threshold": "<=10_km",
+          "distance_threshold_km": 10.0,
+          "cells": 983,
+          "mean_r": 0.6724506717954338,
+          "median_r": 0.6791766271423093,
+          "min_r": 0.5431052852369994,
+          "max_r": 0.790308222475283,
+          "positive_percent": 100.0,
+          "r_ge_0_5_percent": 100.0,
+          "r_ge_0_7_percent": 34.38453713123092,
+          "mean_mapping_distance_km": 4.2817912347351275,
+          "max_mapping_distance_km": 9.711534860246784
+        },
+        {
+          "threshold": "<=7.5_km",
+          "distance_threshold_km": 7.5,
+          "cells": 960,
+          "mean_r": 0.6725524401534919,
+          "median_r": 0.6791931206439099,
+          "min_r": 0.5431052852369994,
+          "max_r": 0.790308222475283,
+          "positive_percent": 100.0,
+          "r_ge_0_5_percent": 100.0,
+          "r_ge_0_7_percent": 34.270833333333336,
+          "mean_mapping_distance_km": 4.183239197236722,
+          "max_mapping_distance_km": 7.4676847784807965
+        },
+        {
+          "threshold": "<=5_km",
+          "distance_threshold_km": 5.0,
+          "cells": 625,
+          "mean_r": 0.6731582683004398,
+          "median_r": 0.6785742758492121,
+          "min_r": 0.5431052852369994,
+          "max_r": 0.790308222475283,
+          "positive_percent": 100.0,
+          "r_ge_0_5_percent": 100.0,
+          "r_ge_0_7_percent": 33.28,
+          "mean_mapping_distance_km": 3.3030586403252813,
+          "max_mapping_distance_km": 4.9955592014949195
+        }
+      ]
+    }
+  },
+  "INTERPRETATION": {
+    "long_term_drying_supported": false,
+    "no_significant_spatial_hotspots": true,
+    "overall_rainfall_association_significant_after_adjustment": true,
+    "final_finding": "Across the analyzed Jharkhand SMAP record, no statistically significant long-term monotonic soil-moisture decline was detected. The state-level trend was slightly negative but highly non-significant, and none of the 984 SMAP cells had a statistically significant long-term trend in the first-pass cell analysis. Seasonal analysis also found no significant state-level seasonal trends, while the seven raw significant cell-season results disappeared after Benjamini-Hochberg FDR correction, leaving no statistically robust spatial-seasonal hotspots. At the same time, the record contains widespread episodic soil-moisture extremes. Soil-moisture and rainfall anomalies show a strong positive same-month association, and that overall association remains significant after an autocorrelation-aware effective-sample-size adjustment. The spatial rainfall relationship is also consistently positive across the mapped SMAP cells and remains stable when the analysis is restricted to closer SMAP-GPM matches. Together, the evidence supports strong rainfall-linked variability and episodic extremes, rather than a simple state-wide long-term drying claim.",
+    "causality_statement": "The analyses demonstrate association, not causality."
+  },
+  "LIMITATIONS": [
+    "The primary long-term SMAP trend test is a first-pass Kendall/Mann-Kendall-style analysis and is not a fully seasonality- and autocorrelation-corrected trend model.",
+    "The seasonal trend analysis explicitly states that it is not an autocorrelation-corrected Seasonal Mann-Kendall implementation.",
+    "Seasonal rainfall-soil-moisture analyses use relatively small complete season-year sample sizes; therefore seasonal estimates should be interpreted cautiously.",
+    "The GPM comparison period ends in September 2025, whereas the SMAP analysis continues through September 2026.",
+    "The spatial cross-variable analysis maps 984 SMAP cells to 703 coarser GPM cells, so the 984 spatial correlations are not 984 independent spatial experiments.",
+    "FDR significance in the spatial cross-variable analysis is a multiple-testing screening result and does not remove all spatial-dependence concerns.",
+    "Extreme-event thresholds and the minimum 5 percent affected-cell criterion are analytical definitions used by this study.",
+    "Correlation and lagged association establish statistical association, not physical causality."
+  ]
+}

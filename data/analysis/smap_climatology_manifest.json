@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "input": "data/analysis/smap_monthly_jharkhand.csv",
+  "output": "data/analysis/smap_climatology.csv",
+  "source_period": {
+    "start": "2015-04-01",
+    "end": "2026-09-01"
+  },
+  "source_months": 138,
+  "spatial_cells": 984,
+  "source_records": 135792,
+  "climatology_records": 11808,
+  "expected_climatology_records": 11808,
+  "baseline_definition": "spatial cell \u00d7 calendar month across all available years",
+  "calendar_months": 12,
+  "season_definition": {
+    "winter": [
+      1,
+      2
+    ],
+    "pre-monsoon": [
+      3,
+      4,
+      5
+    ],
+    "monsoon": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "post-monsoon": [
+      10,
+      11,
+      12
+    ]
+  },
+  "soil_moisture_range": {
+    "min": 0.0285849499128138,
+    "max": 0.5090314517578771
+  },
+  "state_monthly_climatology": [
+    {
+      "calendar_month": 1,
+      "calendar_month_name": "January",
+      "mean_soil_moisture": 0.1548616797148363,
+      "std_across_cells": 0.045528988277215104,
+      "min_cell_value": 0.0744291136978068,
+      "max_cell_value": 0.33031874850851173
+    },
+    {
+      "calendar_month": 2,
+      "calendar_month_name": "February",
+      "mean_soil_moisture": 0.12481929109656033,
+      "std_across_cells": 0.03893718021654439,
+      "min_cell_value": 0.06029153970110115,
+      "max_cell_value": 0.2774064819110775
+    },
+    {
+      "calendar_month": 3,
+      "calendar_month_name": "March",
+      "mean_soil_moisture": 0.11038604834801122,
+      "std_across_cells": 0.032132588444184394,
+      "min_cell_value": 0.06135317958793065,
+      "max_cell_value": 0.23851775796401184
+    },
+    {
+      "calendar_month": 4,
+      "calendar_month_name": "April",
+      "mean_soil_moisture": 0.09331856521777786,
+      "std_across_cells": 0.0290725391699136,
+      "min_cell_value": 0.04866622360487879,
+      "max_cell_value": 0.20616374059269824
+    },
+    {
+      "calendar_month": 5,
+      "calendar_month_name": "May",
+      "mean_soil_moisture": 0.1237583179020799,
+      "std_across_cells": 0.03954054150736152,
+      "min_cell_value": 0.058469988550284784,
+      "max_cell_value": 0.24427674229567245
+    },
+    {
+      "calendar_month": 6,
+      "calendar_month_name": "June",
+      "mean_soil_moisture": 0.16069312298878805,
+      "std_across_cells": 0.03897367782525029,
+      "min_cell_value": 0.09415867910008975,
+      "max_cell_value": 0.2722492460911679
+    },
+    {
+      "calendar_month": 7,
+      "calendar_month_name": "July",
+      "mean_soil_moisture": 0.2617656731303178,
+      "std_across_cells": 0.04857885534638968,
+      "min_cell_value": 0.16574066647100608,
+      "max_cell_value": 0.38986075794704816
+    },
+    {
+      "calendar_month": 8,
+      "calendar_month_name": "August",
+      "mean_soil_moisture": 0.3264392721745546,
+      "std_across_cells": 0.05581445870173705,
+      "min_cell_value": 0.2171019524791508,
+      "max_cell_value": 0.48200291880877105
+    },
+    {
+      "calendar_month": 9,
+      "calendar_month_name": "September",
+      "mean_soil_moisture": 0.31986768045906494,
+      "std_across_cells": 0.0580104074030634,
+      "min_cell_value": 0.20809440141735402,
+      "max_cell_value": 0.4844203680250881
+    },
+    {
+      "calendar_month": 10,
+      "calendar_month_name": "October",
+      "mean_soil_moisture": 0.27672678088151265,
+      "std_across_cells": 0.05891533252348608,
+      "min_cell_value": 0.1691515444698702,
+      "max_cell_value": 0.45220478853522156
+    },
+    {
+      "calendar_month": 11,
+      "calendar_month_name": "November",
+      "mean_soil_moisture": 0.21301751894894053,
+      "std_across_cells": 0.05686397015406193,
+      "min_cell_value": 0.10476242534138937,
+      "max_cell_value": 0.40456804931163787
+    },
+    {
+      "calendar_month": 12,
+      "calendar_month_name": "December",
+      "mean_soil_moisture": 0.18236195241653963,
+      "std_across_cells": 0.05228946708886848,
+      "min_cell_value": 0.08253869817037776,
+      "max_cell_value": 0.3714430392706149
+    }
+  ]
+}
