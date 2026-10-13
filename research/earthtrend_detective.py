@@ -197,7 +197,7 @@ def _(mo):
 
 @app.cell
 def _(Path):
-    BASE = Path("/root/earthtrend-detective")
+    BASE = Path(__file__).resolve().parent.parent
 
     ANALYSIS = (
         BASE

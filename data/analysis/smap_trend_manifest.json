@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "input": "data/analysis/smap_monthly_jharkhand.csv",
+  "state_output": "data/analysis/smap_state_trend.csv",
+  "cell_output": "data/analysis/smap_cell_trends.csv",
+  "source_period": {
+    "start": "2015-04-01",
+    "end": "2026-09-01"
+  },
+  "months": 138,
+  "spatial_cells": 984,
+  "records": 135792,
+  "method": {
+    "trend_magnitude": "Sen's slope",
+    "trend_significance": "Mann-Kendall using Kendall tau",
+    "alpha": 0.05,
+    "time_unit": "monthly",
+    "annualized_slope": "monthly Sen slope \u00d7 12"
+  },
+  "state_trend": {
+    "sen_slope_per_month": -1.1660657433571201e-05,
+    "sen_slope_per_year": -0.00013992788920285442,
+    "kendall_tau": -0.0049719665714587965,
+    "p_value": 0.9310586616605492,
+    "significant_at_0_05": false,
+    "trend_class": "non-significant decreasing"
+  },
+  "cell_summary": {
+    "total_cells": 984,
+    "significant_cells": 0,
+    "significant_fraction": 0.0,
+    "increasing_cells": 465,
+    "decreasing_cells": 519,
+    "significant_increasing_cells": 0,
+    "significant_decreasing_cells": 0
+  },
+  "sen_slope_per_year_range": {
+    "min": -0.003291795213174603,
+    "max": 0.0012397244465821207
+  }
+}
