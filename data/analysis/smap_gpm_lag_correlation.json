@@ -1,0 +1,52 @@
+{
+  "analysis": "SMAP-GPM lagged cross-variable correlation",
+  "smap_source": "data/analysis/smap_anomalies_jharkhand.csv",
+  "gpm_source": "data/analysis/gpm_anomalies_jharkhand.csv",
+  "common_months": 126,
+  "period_start": "2015-04-01",
+  "period_end": "2025-09-01",
+  "tested_lags_months": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "same_month_pearson_r": 0.7135358910048899,
+  "best_absolute_pearson_lag_months": 0,
+  "best_absolute_pearson_r": 0.7135358910048899,
+  "interpretation": "The strongest tested association occurs in the same month. Rainfall anomalies at 1\u20133 month lags do not exceed the same-month association.",
+  "results": [
+    {
+      "lag_months": 0,
+      "n": 126,
+      "pearson_r": 0.7135358910048899,
+      "pearson_p": 6.877127936542278e-21,
+      "spearman_rho": 0.7206569178852644,
+      "spearman_p": 1.8496407761051196e-21
+    },
+    {
+      "lag_months": 1,
+      "n": 125,
+      "pearson_r": 0.600056121362343,
+      "pearson_p": 1.40993048721769e-13,
+      "spearman_rho": 0.6046758832565284,
+      "spearman_p": 8.178921575934328e-14
+    },
+    {
+      "lag_months": 2,
+      "n": 124,
+      "pearson_r": 0.3779862831476887,
+      "pearson_p": 1.5037407371157617e-05,
+      "spearman_rho": 0.39754523996852864,
+      "spearman_p": 4.832643833393522e-06
+    },
+    {
+      "lag_months": 3,
+      "n": 123,
+      "pearson_r": 0.20314023087932065,
+      "pearson_p": 0.024228839927802115,
+      "spearman_rho": 0.1699384762224143,
+      "spearman_p": 0.060222970401308674
+    }
+  ]
+}

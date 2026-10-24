@@ -1,0 +1,50 @@
+{
+  "module": "12_seasonal_trend",
+  "status": "PASS",
+  "dataset": {
+    "input": "/root/earthtrend-detective/data/analysis/smap_monthly_jharkhand.csv",
+    "records": 135792,
+    "cells": 984,
+    "period_start": "2015-04-01",
+    "period_end": "2026-09-01"
+  },
+  "method": {
+    "seasonal_aggregation": "mean soil moisture per season-year",
+    "trend_estimator": "exact Sen's slope",
+    "slope_unit": "soil_moisture_per_year",
+    "monotonic_test": "scipy.stats.kendalltau",
+    "alpha": 0.05,
+    "statistical_note": "This is a first-pass seasonal monotonic trend test. It is not an autocorrelation-corrected Seasonal Mann-Kendall implementation."
+  },
+  "season_definition": {
+    "winter": "January-February",
+    "pre-monsoon": "March-May",
+    "monsoon": "June-September",
+    "post-monsoon": "October-December"
+  },
+  "expected_season_years": {
+    "winter": 11,
+    "pre-monsoon": 12,
+    "monsoon": 12,
+    "post-monsoon": 11
+  },
+  "results": {
+    "state_seasons": 4,
+    "significant_state_seasons": 0,
+    "cell_season_results": 3936,
+    "significant_cell_seasons": 7,
+    "increasing_cell_seasons": 1823,
+    "decreasing_cell_seasons": 2113
+  },
+  "outputs": {
+    "state": "/root/earthtrend-detective/data/analysis/smap_seasonal_state_trends.csv",
+    "cell": "/root/earthtrend-detective/data/analysis/smap_seasonal_cell_trends.csv",
+    "manifest": "/root/earthtrend-detective/data/analysis/smap_seasonal_trend_manifest.json"
+  },
+  "validation": {
+    "state_rows_pass": true,
+    "cell_rows_pass": true,
+    "duplicate_cell_season_pass": true,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "product": "GPM IMERG Monthly",
+  "short_name": "GPM_3IMERGM",
+  "version": "07",
+  "product_file_version": "V07B",
+  "period_start": "2015-04-01",
+  "period_end": "2025-09-01",
+  "expected_months": 126,
+  "actual_months": 126,
+  "jharkhand_gpm_cells": 703,
+  "spatial_resolution": "0.1 degree",
+  "source_variable": "precipitation",
+  "source_units": "mm/hr",
+  "derived_metric": "rainfall_mm_month",
+  "conversion": "monthly mean precipitation rate multiplied by calendar-month hours",
+  "missing_value": -9999.9,
+  "missing_dates": [],
+  "unexpected_dates": [],
+  "duplicate_dates": 0,
+  "coverage_pass": true,
+  "rainfall_valid": true,
+  "status": "FROZEN / ANALYSIS READY"
+}

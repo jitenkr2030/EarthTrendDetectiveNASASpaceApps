@@ -1,0 +1,12 @@
+{
+  "source": "data/analysis/gpm_monthly_jharkhand.csv",
+  "climatology_output": "data/analysis/gpm_climatology_jharkhand.csv",
+  "anomaly_output": "data/analysis/gpm_anomalies_jharkhand.csv",
+  "period_start": "2015-04-01",
+  "period_end": "2025-09-01",
+  "months": 126,
+  "climatology_months": 12,
+  "method": "Calendar-month climatology calculated from 2015-04 through 2025-09. Rainfall anomaly equals observed monthly rainfall minus calendar-month climatological mean. Standardized anomaly equals anomaly divided by calendar-month climatological standard deviation.",
+  "zero_std_months": 0,
+  "status": "FROZEN / ANALYSIS READY"
+}

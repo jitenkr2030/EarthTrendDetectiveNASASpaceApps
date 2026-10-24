@@ -1,0 +1,34 @@
+section,metric,value
+DATA,SMAP months,138
+DATA,SMAP cells,984
+DATA,SMAP records,135792
+TREND,Sen slope per month,-1.1660657433571201e-05
+TREND,Sen slope per year,-0.00013992788920285442
+TREND,Kendall tau,-0.0049719665714587965
+TREND,p-value,0.9310586616605492
+TREND,Significant at 0.05,False
+TREND,Significant cells,0
+SEASONAL TREND,Significant state seasons,0
+SEASONAL TREND,Raw significant cell-seasons,7
+SPATIAL TREND,Raw significant results,7
+SPATIAL TREND,FDR significant results,0
+SPATIAL TREND,Spatial hotspots,0
+EXTREMES,Extreme dry cell-months,1656
+EXTREMES,Extreme wet cell-months,4261
+EXTREMES,Total extreme cell-months,5917
+EXTREMES,Total event episodes,9
+RAINFALL,Same-month Pearson r,0.7135358910048899
+RAINFALL,Same-month Pearson p,6.877127936542278e-21
+RAINFALL LAG,Best lag months,0
+RAINFALL LAG,Best lag Pearson r,0.7135358910048899
+RAINFALL ACF,Overall effective sample size,84.46175631786558
+RAINFALL ACF,Overall adjusted p,2.1999110689728813e-14
+RAINFALL ACF,Significant after adjustment,True
+SPATIAL RAINFALL,Mean Pearson r,0.6724477519424884
+SPATIAL RAINFALL,Median Pearson r,0.6791204493457002
+SPATIAL RAINFALL,Minimum Pearson r,0.5431052852369994
+SPATIAL RAINFALL,Maximum Pearson r,0.790308222475283
+SPATIAL RAINFALL,Positive cells (%),100.0
+SENSITIVITY,<=5 km cells,625
+SENSITIVITY,<=5 km mean Pearson r,0.6731582683004398
+SENSITIVITY,<=5 km median Pearson r,0.6785742758492121

@@ -1,0 +1,28 @@
+{
+  "analysis": "same-month SMAP-GPM cross-variable relationship",
+  "period_start": "2015-04-01",
+  "period_end": "2025-09-01",
+  "common_months": 126,
+  "standardized_anomaly_correlation": {
+    "pearson_r": 0.7135358910048899,
+    "pearson_p": 6.877127936542278e-21,
+    "spearman_rho": 0.7206569178852644,
+    "spearman_p": 1.8496407761051196e-21
+  },
+  "raw_variable_correlation": {
+    "pearson_r": 0.6987207861845376,
+    "pearson_p": 9.335987566319946e-20,
+    "spearman_rho": 0.6005639295088114,
+    "spearman_p": 1.058136370819508e-13
+  },
+  "simultaneous_events": {
+    "both_dry_1sigma": 6,
+    "both_very_dry_1_5sigma": 2,
+    "both_extreme_dry_2sigma": 0,
+    "both_wet_1sigma": 10,
+    "both_very_wet_1_5sigma": 5,
+    "both_extreme_wet_2sigma": 2
+  },
+  "interpretation_rule": "Correlation describes association, not causation. Lagged and seasonality/autocorrelation-aware analysis is required before stronger Earth-system interpretation.",
+  "status": "SAME-MONTH ANALYSIS COMPLETE"
+}

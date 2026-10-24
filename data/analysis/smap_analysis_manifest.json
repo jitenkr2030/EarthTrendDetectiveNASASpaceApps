@@ -1,0 +1,62 @@
+{
+  "project": "EarthTrend Detective",
+  "dataset": {
+    "name": "SMAP Monthly Jharkhand Analysis Dataset",
+    "source": "NASA SMAP SPL4SMGP",
+    "variable": "/Geophysical_Data/sm_surface",
+    "region": "Jharkhand, India",
+    "period": {
+      "start": "2015-04",
+      "end": "2026-09",
+      "months": 138
+    },
+    "spatial_cells_per_month": 984,
+    "total_records": 135792,
+    "coverage": "100% for all monthly cell records"
+  },
+  "schema": [
+    "date",
+    "year",
+    "month_number",
+    "row",
+    "col",
+    "latitude",
+    "longitude",
+    "soil_moisture",
+    "season",
+    "observations",
+    "expected_observations",
+    "coverage_fraction"
+  ],
+  "seasons": {
+    "winter": "January-February",
+    "pre-monsoon": "March-May",
+    "monsoon": "June-September",
+    "post-monsoon": "October-December"
+  },
+  "statistics": {
+    "soil_moisture_min": 0.0285849499128138,
+    "soil_moisture_max": 0.5090314517578771,
+    "soil_moisture_mean": 0.19647838817348845,
+    "coverage_min": 1.0,
+    "coverage_max": 1.0,
+    "coverage_mean": 1.0
+  },
+  "validation": {
+    "source_months_valid": true,
+    "record_count_valid": true,
+    "duplicate_records": 0,
+    "missing_values": 0,
+    "invalid_soil_moisture": 0,
+    "invalid_coverage": 0,
+    "invalid_observations": 0,
+    "coordinate_inconsistency": 0,
+    "final_verdict": "PASS"
+  },
+  "outputs": {
+    "dataset": "/root/earthtrend-detective/data/analysis/smap_monthly_jharkhand.csv",
+    "manifest": "/root/earthtrend-detective/data/analysis/smap_analysis_manifest.json"
+  },
+  "generated_at": "2026-10-05T22:57:59.653165+00:00",
+  "runtime_seconds": 6.028
+}

@@ -1,0 +1,36 @@
+{
+  "project": "EarthTrend Detective",
+  "dataset": "NASA SMAP SPL4SMGP",
+  "variable": "/Geophysical_Data/sm_surface",
+  "period": {
+    "start": "2015-04",
+    "end": "2026-09",
+    "months": 138
+  },
+  "spatial": {
+    "expected_cells_per_month": 984
+  },
+  "records": {
+    "expected": 135792,
+    "actual": 135792
+  },
+  "validation": {
+    "passed_months": 138,
+    "failed_months": 0,
+    "missing_months": [],
+    "unexpected_months": [],
+    "duplicate_records": 0,
+    "missing_values": 0,
+    "invalid_soil_moisture": 0,
+    "invalid_coverage": 0,
+    "invalid_observations": 0,
+    "coordinate_errors": 0
+  },
+  "soil_moisture_range": {
+    "minimum_allowed": 0.0,
+    "maximum_allowed": 1.0
+  },
+  "verdict": "PASS",
+  "runtime_seconds": 3.277,
+  "global_errors": []
+}

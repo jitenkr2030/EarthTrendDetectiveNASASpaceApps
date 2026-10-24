@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "method": "SMAP standardized soil-moisture anomaly vs nearest-GPM standardized rainfall anomaly",
+  "smap_cells": 984,
+  "gpm_cells": 703,
+  "mapped_smap_cells": 984,
+  "joined_rows": 123984,
+  "correlated_cells": 984,
+  "alpha": 0.05,
+  "fdr_method": "Benjamini-Hochberg",
+  "fdr_significant_cells": 984,
+  "pearson_r_min": 0.5431052852369994,
+  "pearson_r_max": 0.790308222475283,
+  "pearson_r_mean": 0.6724477519424884,
+  "pearson_r_median": 0.6791204493457002,
+  "mapping_distance_km_mean": 4.291256246485042,
+  "mapping_distance_km_max": 13.595362796651097
+}

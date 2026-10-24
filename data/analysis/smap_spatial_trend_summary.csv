@@ -1,0 +1,5 @@
+season,cells,raw_significant,fdr_significant,spatial_hotspots,spatial_clusters,isolated_significant,increasing_cells,decreasing_cells,mean_sen_slope_per_year,fdr_significant_fraction
+winter,984,1,0,0,0,0,117,867,-0.001129616403318843,0.0
+pre-monsoon,984,6,0,0,0,0,664,320,0.00020073857781438705,0.0
+monsoon,984,0,0,0,0,0,116,868,-0.0020711632526320034,0.0
+post-monsoon,984,0,0,0,0,0,926,58,0.0021975802439845164,0.0

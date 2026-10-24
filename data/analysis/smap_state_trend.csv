@@ -1,0 +1,2 @@
+start_date,end_date,observations,mean_soil_moisture,sen_slope_per_month,sen_slope_per_year,kendall_tau,p_value,significant_at_0_05,trend_class
+2015-04-01,2026-09-01,138,0.1964783882,-0.0000116607,-0.0001399279,-0.0049719666,0.9310586617,False,non-significant decreasing

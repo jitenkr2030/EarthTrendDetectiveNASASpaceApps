@@ -1,0 +1,51 @@
+{
+  "analysis": "Seasonal SMAP-GPM cross-variable correlation",
+  "smap_source": "data/analysis/smap_anomalies_jharkhand.csv",
+  "gpm_source": "data/analysis/gpm_anomalies_jharkhand.csv",
+  "common_months": 126,
+  "period_start": "2015-04-01",
+  "period_end": "2025-09-01",
+  "seasons": [
+    "winter",
+    "pre-monsoon",
+    "monsoon",
+    "post-monsoon"
+  ],
+  "strongest_season_by_absolute_pearson": "winter",
+  "strongest_pearson_r": 0.8889192253344629,
+  "interpretation": "The strongest seasonal rainfall-soil-moisture association occurs during the winter season (Pearson r = 0.888919). Seasonal correlations describe association within each season and should not be interpreted as evidence of causality.",
+  "results": [
+    {
+      "season": "winter",
+      "n": 20,
+      "pearson_r": 0.8889192253344629,
+      "pearson_p": 1.6236006395268739e-07,
+      "spearman_rho": 0.8150375939849623,
+      "spearman_p": 1.2033925213644683e-05
+    },
+    {
+      "season": "pre-monsoon",
+      "n": 32,
+      "pearson_r": 0.8645820798013256,
+      "pearson_p": 1.7878977123401822e-10,
+      "spearman_rho": 0.8218475073313783,
+      "spearman_p": 8.095076525786553e-09
+    },
+    {
+      "season": "monsoon",
+      "n": 44,
+      "pearson_r": 0.5484267917034946,
+      "pearson_p": 0.00011614902573776582,
+      "spearman_rho": 0.6036645525017619,
+      "spearman_p": 1.4381680522980453e-05
+    },
+    {
+      "season": "post-monsoon",
+      "n": 30,
+      "pearson_r": 0.6653071603818531,
+      "pearson_p": 6.035531599686068e-05,
+      "spearman_rho": 0.7245828698553948,
+      "spearman_p": 5.964336281407346e-06
+    }
+  ]
+}
